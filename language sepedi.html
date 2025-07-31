@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepedi Language Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('images/cov.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(90, 30, 30, 0.9);
+            padding: 15px 30px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky; /* Make navbar sticky */
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 30px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #f7b32b;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 50px auto; /* Centering content */
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #5a1e1e;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 20px 0 10px;
+            color: #333;
+        }
+
+        .phrase {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #444;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px; /* Add padding for better spacing */
+            background-color: rgba(240, 240, 240, 0.7);
+            border-radius: 5px;
+        }
+
+        .translation {
+            font-size: 24px;
+            color: #5a1e1e;
+        }
+
+        .cultural-note {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #555;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #5a1e1e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            z-index: 10;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .phrase,
+            .translation {
+                font-size: 20px;
+            }
+
+            .cultural-note {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Language Chatbot</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Sepedi Language Learning</h1>
+
+        <h2>Common Greetings</h2>
+        <div class="phrase"><span>Hello</span> <span class="translation">Dumela!!</span></div>
+        <div class="phrase"><span>How are you?</span> <span class="translation">O kae?</span></div>
+        <div class="phrase"><span>Good morning</span> <span class="translation">Moseng</span></div>
+        <div class="phrase"><span>Good afternoon</span> <span class="translation">Mathapama</span></div>
+        <div class="phrase"><span>Good evening</span> <span class="translation">thobela</span></div>
+        <div class="phrase"><span>Thank you</span> <span class="translation">Ke a leboga</span></div>
+        <div class="phrase"><span>Man</span> <span class="translation">Monna</span></div>
+        <div class="phrase"><span>Woman</span> <span class="translation">Mosadi</span></div>
+        <div class="phrase"><span>Boy</span> <span class="translation">Mosemane</span></div>
+        <div class="phrase"><span>Girl</span> <span class="translation">Mosetsana</span></div>
+
+        <h2>Useful Vocabulary</h2>
+        <div class="phrase"><span>Please</span> <span class="translation">Ke kopa</span></div>
+        <div class="phrase"><span>Yes</span> <span class="translation">Ee</span></div>
+        <div class="phrase"><span>No</span> <span class="translation">Aowa</span></div>
+        <div class="phrase"><span>Welcome</span> <span class="translation">O amogelesegile</span></div>
+
+        <h2>Pronunciation Tips</h2>
+        <p class="cultural-note">
+            1. The "tl" sound is unique to Sepedi; practice it by placing your tongue against the roof of your mouth.<br>
+            2. Pay attention to intonation; Sepedi is a tonal language, meaning the pitch can change the meaning of words.
+        </p>
+
+        <h2>Cultural Note</h2>
+        <p class="cultural-note">
+            Sepedi is rich in history and culture, reflecting the heritage of the Northern Sotho people. Understanding the language deepens your appreciation of their customs and traditions.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Language Chatbot. All rights reserved.</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library - Language Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+     body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('images/backk.jpg') center / cover no-repeat;
+      color: #f5f5f5;
+    }
+
+    .navbar {
+      background-color: #411f3b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #f7b32b;
+    }
+
+
+    /* Content */
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h2 {
+      color: #ffcc00;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #f5f5f5;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #ffcc00;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #411f3b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .container {
+        margin: 40px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Library Content -->
+  <div class="container">
+    <h1>Library Resources</h1>
+
+    <h2>📚 Books and E-books</h2>
+    <ul>
+      <li><a href="https://files.peacecorps.gov/multimedia/audio/languagelessons/southafrica/ZA_Sepedi_Language_Lessons.pdf" target="_blank">Sepedi Language Lessons (PDF)</a></li>
+    </ul>
+
+    <h2>🌐 Language Learning Resources</h2>
+    <ul>
+      <li><a href="http://learn101.org/xhosa.php" target="_blank">Learn Xhosa – Learn101.org</a></li>
+    </ul>
+
+    <h2>🎥 Video Resources</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@tondaninevhutalu4477/featured" target="_blank">Tondani Nevhutalu – YouTube Channel</a></li>
+    </ul>
+
+    <h2>📘 Grammar Guides and Dictionaries</h2>
+    <ul>
+      <li><a href="https://glosbe.com/ve/en/Tshivenda" target="_blank">Tshivenda Dictionary – Glosbe</a></li>
+      <li><a href="https://archive.org/details/grout-the-isizulu-a-revised-edition-of-a-grammar-of-the-zulu-language-1893/Grout%2C%20The%20Isizulu%2C%20A%20Revised%20Edition%20of%20A%20Grammar%20of%20the%20Zulu%20Language%20%281893%29%20-%20copy%20A/" target="_blank">Zulu Grammar Guide (1893) – Archive.org</a></li>
+    </ul>
+
+    <h2>🤝 Community Contributions</h2>
+    <p>Do you know a great language learning resource? <a href="diversity.html">Submit it here</a>.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 LANNET. All rights reserved. | <a href="contact.html">Contact Us</a>
+  </footer>
+
+</body>
+</html>

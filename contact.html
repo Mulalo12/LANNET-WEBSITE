@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - LANNET</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: url('images/backk.jpg') center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .navbar {
+      background-color: #411f3b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    .container {
+     
+     
+      background: #626161cc;
+      margin: 50px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      padding: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0dddbe;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      color:aqua;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #5bd9fc;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+      padding: 14px;
+      background: linear-gradient(90deg, #5b7bfc, #7e96ff);
+      color: antiquewhite;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #4a6aff, #6b83f5);
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 35px;
+      color:aqua;
+      font-size: 14px;
+    }
+
+    .info p {
+      margin: 6px 0;
+    }
+
+    footer {
+      background-color: #411f3b;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 40px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+
+    <form action="#" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Write something..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="info">
+      <p><strong>Email:</strong> Takalanimanyage@gmail.com</p>
+      <p><strong>Phone:</strong> +27 67 176 4213</p>
+      <p><strong>Location:</strong> Thohoyandou, South Africa</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Language Chatbot. All Rights Reserved.</p>
+    <a href="#">Back to Top</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Languages Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #f5f5f5;
+      background: url('images/backk.jpg') center/cover no-repeat;
+    }
+
+    /* Navbar */
+    
+    .navbar {
+            background-color: #411f3b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            align-items: center;
+        }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold; 
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #f7b32b;
+    }
+
+    /* Dashboard Content */
+    .dashboard-content {
+      text-align: center;
+      padding: 2%;
+    }
+
+    .dashboard-content h1 {
+      font-size: 50px;
+      background: rgba(0, 0, 0, 0.7);
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      margin-bottom: 60px;
+    }
+
+    /* Grid Layout */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    /* Course Cards */
+    .course-card {
+      background: linear-gradient(135deg, #4e3a99, #762a8b);
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .course-card h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .course-card a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .course-card a:hover {
+      color: #f7b32b;
+    }
+
+    /* Image Gallery */
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      margin: 0 auto 60px;
+      max-width: 1100px;
+    }
+    
+
+    .image-gallery img {
+      width: 30%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .dashboard-content h2{
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto 60px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+      animation: fadeIn 3s ease forwards;
+
+    }
+
+    /* Footer */
+    footer {
+      background-color: #411f3b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .dashboard-content h1 {
+        font-size: 32px;
+        padding: 15px 20px;
+      }
+
+      .image-gallery img {
+        width: 90%;
+      }
+      
+    }
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <!-- Dashboard Section -->
+  <div class="dashboard-content">
+    <h1>Languages</h1>
+    <h2> Language is more than just communication — it's a bridge to culture, history, and connection. <br>
+      Learning a new language brings you closer to people and their stories.</h2>
+    <div class="course-grid">
+      <div class="course-card"><h3><a href="zulu tab.html">IsiZulu</a></h3></div>
+      <div class="course-card"><h3><a href="venda tab.html">Tshivenda</a></h3></div>
+      <div class="course-card"><h3><a href="sepedi tab.html">Sepedi</a></h3></div>
+      <div class="course-card"><h3><a href="Bolobedu tab.html">Selobedu</a></h3></div>
+      <div class="course-card"><h3><a href="tswana.html">Setswana</a></h3></div>
+      <div class="course-card"><h3><a href="Tsonga tab.html">Xitsonga</a></h3></div>
+      <div class="course-card"><h3><a href="afrikaans tab.html">Afrikaans</a></h3></div>
+      <div class="course-card"><h3><a href="xhosa tab.html">Isixhosa</a></h3></div>
+      <div class="course-card"><h3><a href="Khoisan tab.html">Khoisan</a></h3></div>
+      <div class="course-card"><h3><a href="shona tab.html">Shona</a></h3></div>
+      <div class="course-card"><h3><a href="swati tab.html">Siswati</a></h3></div>
+    </div>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="image-gallery">
+    <img src="images/venda.jpg" alt="Venda Culture">
+    <img src="images/zulu l.jpg" alt="Zulu Learners">
+    <img src="images/tsonga l.jpg" alt="Tsonga Language">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 LANNET. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+</body>
+</html>

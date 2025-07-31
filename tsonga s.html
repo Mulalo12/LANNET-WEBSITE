@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tsonga Language Sounds</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Roboto', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background: url('images/backk.jpg') center/cover no-repeat;
+    }
+
+    .navbar {
+      background-color: #411f3b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px 100px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #f5f5f5;
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #f0f0f0;
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .sound-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .sound-btn {
+      background-color: #fff;
+      border: 2px solid #5a1e1e;
+      color: #5a1e1e;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sound-btn:hover {
+      background-color: #f0eaea;
+    }
+
+    footer {
+      background-color: #5a1e1e;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+      .sound-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div class="main-content">
+    <h1>Tsonga Language Sounds</h1>
+    <p>Tsonga is a rich Bantu language spoken in Southern Africa. Below are examples of unique phonetic sounds found in the language.</p>
+    
+    <div class="sound-container">
+      <button class="sound-btn">Nx</button>
+      <button class="sound-btn">Tsh</button>
+      <button class="sound-btn">Th</button>
+      <button class="sound-btn">Sw</button>
+      <button class="sound-btn">X</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Tsonga Language Portal. All rights reserved.
+  </footer>
+
+</body>
+</html>

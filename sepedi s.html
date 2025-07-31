@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepedi Language Sounds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #5a1e1e;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        h1 {
+            font-size: 28px;
+            color: #5a1e1e;
+            margin-bottom: 20px;
+            margin-top: 100px; /* Adjusted for navbar */
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        /* Sound buttons */
+        .sound-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sound-btn {
+            background-color: #fff;
+            border: 2px solid #5a1e1e;
+            color: #5a1e1e;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sound-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #5a1e1e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Language Chatbot</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Title and Description -->
+    <h1>Sepedi Language Sounds</h1>
+    <p>
+        Sepedi, a Bantu language spoken in Southern Africa, has distinct phonetic sounds.   </p>
+
+    <!-- Sound Buttons -->
+    <div class="sound-container">
+        <button class="sound-btn">N</button>
+        <button class="sound-btn">Tl</button>
+        <button class="sound-btn">Ts</button>
+        <button class="sound-btn">Sh</button>
+        <button class="sound-btn">Ng</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Sepedi Language Portal. All rights reserved.
+    </footer>
+
+</body>
+</html>

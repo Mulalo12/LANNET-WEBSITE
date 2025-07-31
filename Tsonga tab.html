@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language Chatbot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('images/tsonga tabb.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar styling */
+   .navbar {
+      background-color: #411f3b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+	  justify-content: center;
+	  
+      margin: 80px auto 40px auto; /* Adjusted margin */
+    }
+
+    h1 {
+      color: white;
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    .block-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .tab-block {
+      width: 30%;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .tab-block:hover {
+      transform: translateY(-5px);
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Block colors */
+    .Sounds { background-color: orange; }
+    .Language { background-color: red; }
+    .Culture { background-color: blue; }
+    .Translator { background-color: #F7CAC9; }
+    .PastPapers { background-color: #45B8AC; }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #411f3b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: auto;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .tab-block {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .tab-block {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Xitsonga</h1>
+    <div class="block-tabs">
+      <div class="tab-block Sounds"><a href="#">Sounds</a></div>
+      <div class="tab-block Language"><a href="#">Language</a></div>
+      <div class="tab-block Culture"><a href="xitsonga culture.html">Culture</a></div>
+      <div class="tab-block Translator"><a href="#">Translator</a></div>
+      <div class="tab-block PastPapers"><a href="#">Past Papers</a></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 LANNET. All rights reserved.
+  </footer>
+
+</body>
+</html>

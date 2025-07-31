@@ -1,0 +1,190 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepedi Translation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #5a1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 98%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main container */
+        .container {
+            margin-top: 100px; /* To create space for the fixed navbar */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px;
+        }
+
+        .input-group {
+            width: 45%;
+        }
+
+        .input-group label {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .input-group input {
+            width: 80%;
+            padding: 70px; /* Adjusted padding for input */
+            font-size: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .translate-btn {
+            width: 20%;
+            padding: 15px;
+            background-color: #5a1e1e;
+            color: white;
+            font-size: 22px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .translate-btn:hover {
+            background-color: #7b3232;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #5a1e1e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+    <!-- Main Container with Two Input Groups -->
+    <div class="container">
+        <!-- Left: English Input -->
+        <div class="input-group">
+            <label for="english-word">English Word/Phrase</label>
+            <input type="text" id="english-word" placeholder="Write here">
+        </div>
+
+        <!-- Right: Sepedi Translation Display -->
+        <div class="input-group">
+            <label for="sepedi-translation">Sepedi Translation</label>
+            <input type="text" id="sepedi-translation" placeholder="Translation" readonly>
+        </div>
+    </div>
+
+    <!-- Translate Button -->
+    <button class="translate-btn" onclick="translateWord()">Translate</button>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Sepedi Language Portal. All rights reserved.
+    </footer>
+
+    <script>
+        // Pre-stored dictionary for translation
+        const translations = {
+            "hello": "Dumela!!",
+            "how are you": "O kae?",
+            "thank you": "Ke a leboga",
+            "i'm going out with my friends": "Ke ya go etela bagwera ba ka",
+            "yes": "Ee",
+            "no": "Aowa",
+            "money": "Tshelete",
+            "what's your name?": "Lebitso la gago ke mang?",
+            "my name is": "Lebitso la me ke...",
+            "i'm fine": "Ke botse",
+            "good morning, how are you?": "Dumela ekuseni, o kae?",
+            "forgive me": "Ke kopa borai"
+        };
+
+        // Function to perform translation
+        function translateWord() {
+            const englishWord = document.getElementById('english-word').value.toLowerCase();
+            const translationBox = document.getElementById('sepedi-translation');
+
+            // Check if the word exists in the dictionary
+            if (translations[englishWord]) {
+                translationBox.value = translations[englishWord];
+            } else {
+                translationBox.value = 'Phetolelo e sitwa go fumaneha.';
+            }
+        }
+    </script>
+
+</body>
+</html>

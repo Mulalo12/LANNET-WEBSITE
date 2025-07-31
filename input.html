@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language Contribution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('images/backk.jpg') center / cover no-repeat;
+      color: #f5f5f5;
+    }
+
+    .navbar {
+      background-color: #411f3b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #f7b32b;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto 100px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #f7b32b;
+      color: #411f3b;
+      font-weight: bold;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #e0a726;
+    }
+
+    footer {
+      background-color: #411f3b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Form Section -->
+  <div class="container">
+    <h1>Share Your Language Knowledge</h1>
+    <form>
+      <label for="name">First Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="language">Language</label>
+      <select id="language" name="language" required>
+        <option value="">-- Select Language --</option>
+        <option value="Zulu">Zulu</option>
+        <option value="Xhosa">Xhosa</option>
+        <option value="Afrikaans">Afrikaans</option>
+        <option value="Sepedi">Sepedi</option>
+        <option value="Setswana">Setswana</option>
+        <option value="Tshivenda">Tshivenda</option>
+        <option value="Tsonga">Tsonga</option>
+        <option value="Swati">Swati</option>
+        <option value="Ndebele">Ndebele</option>
+        <option value="English">English</option>
+        <option value="Sesotho">Sesotho</option>
+      </select>
+
+      <label for="text">Your Contribution</label>
+      <textarea id="text" name="text" placeholder="Add words, phrases, cultural info, etc." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 LANNET. All rights reserved. | <a href="contact.html" style="color: #fff; text-decoration: underline;">Contact Us</a>
+  </footer>
+
+</body>
+</html>

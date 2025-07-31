@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Learn any language effortlessly with our chatbot. Enhance communication skills and connect with different cultures from home.">
+    <meta name="keywords" content="language learning, chatbot, online learning, communication, culture">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: url('images/backk.jpg') center/cover no-repeat;
+        }
+
+        .navbar {
+            background-color: #411f3b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+
+        .text-box {
+            text-align: center;
+            color: white;
+            margin: 60px 20px 20px;
+        }
+
+        .text-box h1 {
+            font-size: 45px;
+            margin: 0;
+            padding: 5px;
+            color: aquamarine;
+            animation: bounce 2s infinite;
+        }
+
+        .text-box h2 {
+            padding: 20px;
+            margin-top: 40px;
+            line-height: 1.8;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* === Replacing .image-gallery with 3D carousel styles === */
+
+        .container {
+            width: 300px;
+            height: 400px;
+            margin: 40px auto; /* center horizontally with margin */
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 20s linear infinite;
+            transform: perspective(1000px);
+        }
+
+        .container span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .container span img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .container span:nth-child(1) { transform: rotateY(0deg) translateZ(400px); }
+        .container span:nth-child(2) { transform: rotateY(45deg) translateZ(400px); }
+        .container span:nth-child(3) { transform: rotateY(90deg) translateZ(400px); }
+        .container span:nth-child(4) { transform: rotateY(135deg) translateZ(400px); }
+        .container span:nth-child(5) { transform: rotateY(180deg) translateZ(400px); }
+        .container span:nth-child(6) { transform: rotateY(225deg) translateZ(400px); }
+        .container span:nth-child(7) { transform: rotateY(270deg) translateZ(400px); }
+        .container span:nth-child(8) { transform: rotateY(315deg) translateZ(400px); }
+
+        @keyframes rotate {
+            from { transform: perspective(1000px) rotateY(0deg); }
+            to { transform: perspective(1000px) rotateY(360deg); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .text-box h1 {
+                font-size: 28px;
+            }
+
+            .text-box h2 {
+                font-size: 16px;
+            }
+
+            /* Adjust carousel size on smaller screens */
+            .container {
+                width: 90vw;
+                height: 76vw;
+                max-width: 300px;
+                max-height: 400px;
+            }
+        }
+
+        footer {
+            background-color: #411f3b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LANNET</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="diversity.html">Diversity</a></li>
+          <li><a href="input.html">Input</a></li>
+          <li><a href="more.html">More</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="text-box">
+        <h1>Explore the World Through Language.</h1>
+        <h1>Discover New Cultures, Ideas, and Stories.</h1>
+
+        <h2>
+            Welcome to our LANNET platform, where learning any language becomes an enjoyable and seamless experience.
+            <br>Whether you're looking to enhance your communication skills or connect with different cultures,
+            <br>our platform offers a variety of languages that you can start learning right away
+            <br>from the comfort of your own home.
+        </h2>
+    </div>
+
+    <!-- Replacing image-gallery with 3D carousel -->
+    <div class="container">
+        <span><img src="images/venda art.jpg" alt="Image 1"></span>
+        <span><img src="images/zulu dance.jpg" alt="Image 2"></span>
+        <span><img src="images/sepedi tab.jpg" alt="Image 3"></span>
+        <span><img src="images/tsonga1.jpg" alt="Image 4"></span>
+        <span><img src="images/xhosa1.jpg" alt="Image 5"></span>
+        <span><img src="images/nwendaa.jpg" alt="Image 6"></span>
+        <span><img src="images/sotho.jpeg" alt="Image 7"></span>
+        <span><img src="images/swatii.jpg" alt="Image 8"></span>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LANNET. All Rights Reserved.</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+
+</body>
+</html>

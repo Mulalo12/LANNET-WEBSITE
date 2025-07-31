@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Chatbot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('images/bolobeduu.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: clear;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 10%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+
+        .profile {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 50px; /* Added margin to give breathing room below navbar */
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        .block-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+		.navbar {
+    background-color: #004080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+        .tab-block {
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .tab-block:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Colors for each block */
+        .Sounds { background-color: orange; }
+        .Language { background-color: red; }
+        .Culture { background-color: blue; }
+        .Translator { background-color: #F7CAC9; }
+        .PastPapers { background-color: #45B8AC; }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .tab-block {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .tab-block {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Language Chatbot</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Bolobedu</h1>
+        <div class="block-tabs">
+            <div class="tab-block Sounds"><a href="#">Sounds</a></div>
+            <div class="tab-block Language"><a href="#">Language</a></div>
+            <div class="tab-block Culture"><a href="#">Culture</a></div>
+            <div class="tab-block Translator"><a href="#">Translator</a></div>
+            <div class="tab-block PastPapers"><a href="#">Past Papers</a></div>
+        </div>
+    </div>
+
+</body>
+</html>

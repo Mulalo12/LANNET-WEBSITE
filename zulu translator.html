@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tshivenda Translation</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Roboto', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background: url('images/backk.jpg') center / cover no-repeat;
+    }
+
+    .navbar {
+      background-color: #411f3b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+    }
+
+    .input-wrapper {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input-group label {
+        background-color: #000000;
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: rgb(220, 216, 216);
+      border-radius: 7px;
+      width: 350px;
+      padding: 6px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 40px;
+      font-size: 18px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .translate-btn {
+      background-color: #ffcc00;
+      color: #411f3b;
+      padding: 20px 40px;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .translate-btn:hover {
+      background-color: #746731;
+    }
+
+    footer {
+      background-color: #411f3b;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="input-wrapper">
+      <!-- English Input -->
+      <div class="input-group">
+        <label for="english-word">English Word/Phrase</label>
+        <input type="text" id="english-word" placeholder="Enter word or phrase">
+      </div>
+
+      <!-- Tshivenda Output -->
+      <div class="input-group">
+        <label for="venda-translation">ISIZULU Translation</label>
+        <input type="text" id="venda-translation" placeholder="Translation will appear here" readonly>
+      </div>
+    </div>
+
+    <!-- Translate Button -->
+    <button class="translate-btn" onclick="translateWord()">Translate</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 LANNET. All rights reserved.
+  </footer>
+
+  
+  <script>
+    // Pre-stored dictionary for translation
+    const translations = {
+        "hello": "Sawubona",
+        "how are you": "Unjani?",
+        "thank you": "Ngiyabonga",
+        "i'm going out with my friends": "Ngiyaphuma nabangane bami",
+        "yes": "Yebo",
+        "no": "Cha",
+        "money": "imali",
+        "what's your name?": "Ngubani igama lakho?",
+        "my name is": "Igama lami ngu...",
+        "i'm fine": "Ngiyaphila",
+        "good morning, how are you?": "Sawubona ekuseni, unjani?",
+        "forgive me": "Ngiyaxolisa"
+    };
+
+    // Function to perform translation
+    function translateWord() {
+        const englishWord = document.getElementById('english-word').value.toLowerCase();
+        const translationBox = document.getElementById('venda-translation');
+
+        // Check if the word exists in the dictionary
+        if (translations[englishWord]) {
+            translationBox.value = translations[englishWord];
+        } else {
+            translationBox.value = 'Translation not available.';
+        }
+    }
+</script>
+
+
+</body>
+</html>

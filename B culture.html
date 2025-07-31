@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cultural Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #5a1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px; /* Adjusted to account for the fixed navbar */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #5a1e1e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80%;
+            padding: 15px 10%;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery .item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery .item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery .item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 5px solid #5a1e1e;
+        }
+
+        .gallery h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+            color: #5a1e1e;
+        }
+
+        .gallery p {
+            font-size: 1em;
+            color: #666;
+            padding: 0 15px 15px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #5a1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: center;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .gallery h3 {
+                font-size: 1.3em;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 5%;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .gallery p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+   <nav class="navbar">
+    <div class="logo">Language Chatbot</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="languages.html">Languages</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="more.html">More</a></li>
+    </ul>
+</nav>
+
+    <header>
+        <h1>Discover the Richness of Bolobedu Culture</h1>
+        <p>Experience the beauty of Bolobedu traditions through attire, art, food, and much more.</p>
+    </header>
+
+    <section class="gallery">
+        <div class="item">
+            <img src="images/B trad.jpg" alt="Traditional Attire">
+            <img src="images/bolobedu.jpg" alt="Traditional Attire">
+            <h3>Traditional Attire</h3>
+            <p>This attire is worn during special cultural ceremonies and is known for its vibrant colors.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/queen.jpg" alt="Cultural King">
+            <h3>QUEEN</h3>
+            <h4> "QUEEN Modjadji" </h4>
+            <p>The Queen symbolizes unity and leadership in the Bolobedu community, holding significant cultural authority.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/venda food.jpg" alt="Traditional Food">
+            <img src="images/food b2.jpg" alt="Traditional Food">
+            <h3>Traditional Food</h3>
+            <p>Staple dishes like "Letelele" are central to Bolobedu cuisine, embodying the rich culinary history.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/B trad2.jpg" alt="Traditional Dance">
+            <img src="images/B dance.jpg" alt="Traditional Dance">
+            <h3>Traditional Dance</h3>
+            <p>Bolobedu dances, such as the Domba dance, are performed during cultural festivals to celebrate heritage.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/venda art.jpg" alt="Traditional Art">
+            <h3>Traditional Art</h3>
+            <p>Art forms like pottery and beadwork reflect the creativity and craftsmanship of the Bolobedu people.</p>
+        </div>
+
+        <!-- Add more items as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cultural Showcase. All rights reserved.</p>
+    </footer>
+</body>
+</html>

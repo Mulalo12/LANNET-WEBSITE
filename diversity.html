@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>South African Language Diversity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('images/backk.jpg') center / cover no-repeat;
+      color: #f5f5f5;
+    }
+
+    .navbar {
+      background-color: #411f3b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #f7b32b;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .languages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .language-card {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    .language-card img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .language-card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    .language-card p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #411f3b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .language-card h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LANNET</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="languages.html">Languages</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="diversity.html">Diversity</a></li>
+      <li><a href="input.html">Input</a></li>
+      <li><a href="more.html">More</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>South African Languages & Cultural Diversity</h1>
+
+    <div class="languages-grid">
+      <!-- Zulu -->
+      <div class="language-card">
+        <img src="images/zulu dance.jpg" alt="Zulu Culture">
+        <h2>Zulu</h2>
+        <p>Zulu is the most widely spoken home language. Rich in history, dance, and warrior tradition, Zulu culture remains a cornerstone of South African identity.</p>
+      </div>
+
+      <!-- Xhosa -->
+      <div class="language-card">
+        <img src="images/xhosa.jpg" alt="Xhosa Culture">
+        <h2>Xhosa</h2>
+        <p>Known for its click sounds, Xhosa is a lyrical language with strong traditions of poetry, oral storytelling, and initiation rituals.</p>
+      </div>
+
+
+      <!-- Sepedi -->
+      <div class="language-card">
+        <img src="images/sepedi tab.jpg" alt="Sepedi Culture">
+        <h2>Sepedi (Northern Sotho)</h2>
+        <p>The Sepedi people celebrate with traditional songs and dances and are known for community leadership and respect for rituals.</p>
+      </div>
+
+      <!-- Setswana -->
+      <div class="language-card">
+        <img src="images/setswana.jpg" alt="Tswana Culture">
+        <h2>Setswana</h2>
+        <p>Tswana is spoken both in South Africa and Botswana, with emphasis on unity, respect, and storytelling through song and proverbs.</p>
+      </div>
+
+      <!-- Tshivenda -->
+      <div class="language-card">
+        <img src="images/mufaro1.jpg" alt="Tshivenda Culture">
+        <h2>Tshivenda</h2>
+        <p>Tshivenda reflects spiritual traditions and nature-based customs, often centered around sacred places and ancestral respect.</p>
+      </div>
+
+      <!-- Tsonga -->
+      <div class="language-card">
+        <img src="images/tsonga dance.jpg" alt="Tsonga Culture">
+        <h2>Tsonga</h2>
+        <p>Spoken mainly in Limpopo and Mpumalanga, Tsonga is tied to vibrant music, beadwork, and cultural festivals.</p>
+      </div>
+
+      <!-- Swati -->
+      <div class="language-card">
+        <img src="images/swati.jpg" alt="Swati Culture">
+        <h2>Swati</h2>
+        <p>Spoken in Eswatini and parts of South Africa, Swati culture is closely connected to royal traditions and the annual reed dance.</p>
+      </div>
+
+      <!-- Ndebele -->
+      <div class="language-card">
+        <img src="images/ndebele.jpg" alt="Ndebele Culture">
+        <h2>Ndebele</h2>
+        <p>Famous for its colorful geometric house art and beadwork, Ndebele heritage stands out visually and spiritually.</p>
+      </div>
+
+      <!-- Southern Sotho -->
+      <div class="language-card">
+        <img src="images/sotho.jpeg" alt="Sotho Culture">
+        <h2>Sesotho</h2>
+        <p>Sesotho is the language of the Basotho people, known for their famous Basotho blanket and mountain-based traditions.</p>
+      </div>
+
+      
+      <!-- Afrikaans -->
+      <div class="language-card">
+        <img src="images/afrikaans.jpg" alt="Afrikaans Culture">
+        <h2>Afrikaans</h2>
+        <p>Developed from Dutch, Afrikaans is spoken widely across South Africa and is known for its literature, music, and farming heritage.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 LANNET. All rights reserved. | <a href="contact.html" style="color: #fff; text-decoration: underline;">Contact Us</a>
+  </footer>
+
+</body>
+</html>

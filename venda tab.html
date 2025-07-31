@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshivenda Language and Culture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('images/nwendaa.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #411f3b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            align-items: center;
+        }
+
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+
+        .container {
+            flex-grow: 1;
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .culture-info {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .block-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tab-block {
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .tab-block:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Colors for each block */
+        .Sounds { background-color: orange; }
+        .Language { background-color: red; }
+        .Culture { background-color: blue; }
+        .Translator { background-color: #F7CAC9; }
+        .PastPapers { background-color: #45B8AC; }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #411f3b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .tab-block {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .tab-block {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LANNET</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="diversity.html">Diversity</a></li>
+          <li><a href="input.html">Input</a></li>
+          <li><a href="more.html">More</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Tshivenda Language and Culture</h1>
+        
+        <!-- Cultural Information -->
+        <div class="culture-info">
+            <p>
+                Tshivenda is a Bantu language spoken primarily in the northern regions of South Africa, particularly in Limpopo Province. It is one of the official languages of South Africa and plays a significant role in the cultural identity of the Vhavenḓa people.
+            </p>
+            <p>
+                The Vhavenḓa community is known for its rich traditions, including vibrant music, dance, and art. Tshivenda not only serves as a means of communication but also carries the heritage, stories, and values of the Vhavenḓa people, reflecting their deep connection to the land and their ancestors.
+            </p>
+            <p>
+                Learning Tshivenda opens the door to understanding the customs and practices of the Vhavenḓa, from their traditional ceremonies to their culinary delights, making it an enriching experience for anyone interested in South African culture.
+            </p>
+        </div>
+
+        <!-- Tab Sections -->
+        <div class="block-tabs">
+            <div class="tab-block Sounds"><a href="venda s.html">Sounds</a></div>
+            <div class="tab-block Language"><a href="Language tshivenda.html">Language</a></div>
+            <div class="tab-block Culture"><a href="venda culture.html">Culture</a></div>
+            <div class="tab-block Translator"><a href="tshivenda translator.html">Translator</a></div>
+            <div class="tab-block PastPapers"><a href="venda pp.html">PastPapers</a></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LANNET. All rights reserved.</p>
+        <a href="contact.html" style="color: white;">Contact Us</a>
+    </footer>
+
+</body>
+</html>
